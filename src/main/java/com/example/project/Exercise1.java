@@ -18,15 +18,13 @@ public class Exercise1 {
 
 		// TO DO
 		if(validar(a) == true) {
-			if(validar(a) == true) {
-				int [] num = guardarDigitos(a);
-				int suma = 0;
-				for (int i = 0; i < num.length; i++) {
-					suma = suma + (num[i] * ((int)Math.pow(2, i+1) - 1));
-				}
-				String convertido = String.valueOf(suma);
-				return convertido;
+			int [] num = guardarDigitos(a);
+			int suma = 0;
+			for (int i = 0; i < num.length; i++) {
+				suma = suma + (num[i] * ((int)Math.pow(2, i+1) - 1));
 			}
+			String convertido = String.valueOf(suma);
+			return convertido;
 		}
 		return "El numero proporcionado no esta en base Gabriel.";
 	}
